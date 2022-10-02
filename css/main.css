@@ -1,0 +1,332 @@
+@import url("https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap");
+
+:root {
+	--html-color: rgb(255, 74, 50);
+	--vue-color: #41b883;
+	--node-color: rgb(153, 224, 86);
+	--cs-color: rgb(0, 255, 242);
+}
+
+a {
+	text-decoration: none;
+	color: white;
+}
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	background-color: transparent;
+	font-family: "Fredoka One", cursive;
+	letter-spacing: 0.2rem;
+	font-weight: 400;
+}
+
+.background {
+	position: fixed;
+	width: 100vw;
+	height: 100vh;
+	background: rgb(172, 50, 226);
+	background: linear-gradient(
+		32deg,
+		rgba(172, 50, 226, 1) 0%,
+		rgba(63, 40, 206, 1) 50%,
+		rgba(46, 34, 193, 1) 100%
+	);
+	z-index: -10;
+}
+header {
+	position: fixed;
+	top: 0;
+	width: 100vw;
+	height: 10vh;
+	z-index: 1;
+	padding: 1rem 2rem;
+	display: flex;
+}
+
+header a {
+	font-size: 2rem;
+	text-decoration: none;
+	color: rgb(255, 220, 250);
+	margin: 0 1rem;
+}
+
+header a:hover {
+	color: rgb(255, 162, 243);
+}
+
+header a img {
+	width: 2rem;
+	transition: all 0.2s ease;
+}
+
+header a img:hover {
+	transform: scale(1.5);
+}
+
+header a img:active {
+	transform: scale(1.1);
+}
+
+.push-right {
+	margin-left: auto;
+}
+
+html {
+	width: 100vw;
+	height: 100vh;
+	scroll-behavior: smooth;
+}
+
+body {
+	width: 100vw;
+	height: 100vh;
+	overflow-y: scroll;
+	overflow-x: hidden;
+}
+
+h1 {
+	font-size: 5rem;
+	color: white;
+}
+
+h2 {
+	font-size: 2rem;
+}
+
+.revealUp {
+	opacity: 0;
+	visibility: hidden;
+}
+
+.scroll-area {
+	height: 100vh;
+	color: white;
+}
+
+#title {
+	display: flex;
+	justify-content: start;
+	align-items: center;
+}
+
+.title-box {
+	margin-left: 20vw;
+	animation: slideup 1s ease-out 1;
+}
+
+.title-box h2 {
+	color: lightgray;
+}
+
+@keyframes slideup {
+	from {
+		opacity: 0;
+		transform: translate(0, 100px);
+	}
+}
+
+#projects {
+	display: grid;
+	grid-template-rows: 20vh 20vh 1fr;
+	place-items: center;
+}
+
+.projects-title {
+	padding: 2rem 0;
+}
+
+.langs-container {
+	display: grid;
+	grid-template: 1fr 1fr / 1fr 1fr;
+	width: 60vw;
+	height: 20vh;
+	columns: 2;
+	justify-content: center;
+	place-items: center;
+	text-align: center;
+}
+
+.lang-btn {
+	cursor: pointer;
+}
+
+.underline {
+	width: 100%;
+	height: 5px;
+	display: block;
+	transform: scaleX(0);
+	transition: transform 0.3s ease-out;
+	border-radius: 5px;
+}
+
+.lang-btn:hover .underline,
+.selected .underline {
+	transform: scaleX(1);
+}
+
+.hidden {
+	opacity: 0;
+}
+
+.projects-container {
+	position: relative;
+	width: 100vw;
+	height: 100%;
+	transition: opacity 0.5s linear;
+}
+
+.lang-carousel {
+	position: absolute;
+	display: flex;
+	height: 100%;
+	top: 0;
+	left: 0;
+	transition: transform 1s ease-in-out;
+	transform: translateX(100vw);
+}
+
+.lang-carousel.pos0 {
+	transform: translateX(0);
+}
+
+.lang-carousel.pos1 {
+	transform: translateX(-100vw);
+}
+
+.lang-carousel.pos2 {
+	transform: translateX(-200vw);
+}
+
+.lang-carousel.pos3 {
+	transform: translateX(-300vw);
+}
+
+.lang-panel {
+	min-width: 100vw;
+	height: 100%;
+	display: grid;
+	grid-template-rows: auto 1fr;
+	place-items: center;
+}
+
+.lang-text {
+	font-size: 1.5rem;
+	max-width: 70ch;
+	text-align: center;
+}
+
+.lang-projects {
+	display: flex;
+	justify-content: center;
+	align-items: flex-start;
+	gap: 5rem;
+}
+
+.project-card {
+	width: 55ch;
+	height: 25rem;
+	border-radius: 10px;
+	overflow: hidden;
+	transition: transform 0.7s ease;
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+	box-shadow: 0 0 20px black;
+	display: grid;
+	grid-template-rows: 7rem 1fr;
+}
+
+.project-card:hover {
+	transform: scale(1.1);
+}
+
+.caseopening {
+	background-image: url("../img/case_openings.png");
+}
+
+.gigsearch {
+	background-image: url("../img/gigsearch.png");
+}
+
+.movie-night {
+	background-image: url("../img/movie_night.png");
+}
+
+.wiki-connections {
+	background-image: url("../img/wikipedia.png");
+}
+
+.wordle-clone {
+	background-image: url("../img/wordle.jpg");
+}
+
+.portfolio {
+	background: rgb(172, 50, 226);
+	background: linear-gradient(
+		32deg,
+		rgba(172, 50, 226, 1) 0%,
+		rgba(63, 40, 206, 1) 50%,
+		rgba(46, 34, 193, 1) 100%
+	);
+}
+
+.card-content {
+	grid-row-start: 2;
+	padding: 1.5rem;
+	background: linear-gradient(
+		hsl(0 0% 0% / 0),
+		hsl(0 0% 0% / 0.6) 10%,
+		hsl(0 0% 0% / 1)
+	);
+	transition: transform 0.5s ease;
+	transform: translateY(74%);
+}
+
+.project-card:hover .card-content {
+	transform: translateY(0);
+	transition-delay: 0.3s;
+}
+
+.project-title {
+	margin-bottom: 1rem;
+	color: white;
+}
+
+.project-btn-group {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin: 1rem 0 0 0;
+	flex-direction: row-reverse;
+}
+
+.project-btn {
+	cursor: pointer;
+	display: inline-block;
+	text-decoration: none;
+	font-size: 1.2rem;
+	color: white;
+	background-color: blue;
+	padding: 0.5rem 1.25rem;
+	border-radius: 10px;
+	transition: color 0.2s ease-out;
+	transition: background-color 0.2s ease-out;
+}
+
+.project-btn:hover,
+.project-btn:active {
+	background-color: rgb(0, 198, 248);
+	color: black;
+}
+
+.project-btn-group a img {
+	height: 2rem;
+	transition: transform 0.2s ease-out;
+}
+
+.project-btn-group a img:hover,
+.project-btn-group a img:active {
+	transform: scale(1.3);
+}

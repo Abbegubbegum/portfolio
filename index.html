@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="css/main.css" />
+		<script src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/16327/gsap-latest-beta.min.js?r=5426"></script>
+		<script src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/16327/ScrollTrigger.min.js"></script>
+		<script src="js/main.js" defer></script>
+		<title>Albin Norbäck | Full Stack Dev</title>
+	</head>
+	<body>
+		<div class="background"></div>
+		<header>
+			<a href="#projects" class="push-right"> Projects </a>
+			<a href="https://github.com/Abbegubbegum"
+				><img src="img/github.png" alt="Github"
+			/></a>
+			<a href="https://www.linkedin.com/in/albin-norback-9a3326212/"
+				><img src="img/linkedin.png" alt="LinkedIn"
+			/></a>
+		</header>
+		<div id="title" class="scroll-area">
+			<div class="title-box">
+				<h1>Hello,</h1>
+				<h1>I'm Albin Norbäck</h1>
+				<h2>A Full Stack Developer</h2>
+				<h2>Based in Stockholm, SWE</h2>
+			</div>
+		</div>
+		<div id="projects" class="scroll-area">
+			<h1 class="revealUp projects-title">Projects</h1>
+
+			<div class="revealUp">
+				<div class="langs-container">
+					<h2
+						class="lang-btn"
+						data-lang="html"
+						style="color: var(--html-color)"
+					>
+						HTML/CSS/JS
+						<span
+							class="underline"
+							style="background-color: var(--html-color)"
+						></span>
+					</h2>
+					<h2
+						class="lang-btn"
+						data-lang="vue"
+						style="color: var(--vue-color)"
+					>
+						Vue.js
+						<span
+							class="underline"
+							style="background-color: var(--vue-color)"
+						></span>
+					</h2>
+					<h2
+						class="lang-btn"
+						data-lang="node"
+						style="color: var(--node-color)"
+					>
+						NodeJS
+						<span
+							class="underline"
+							style="background-color: var(--node-color)"
+						></span>
+					</h2>
+
+					<h2
+						class="lang-btn"
+						data-lang="cs"
+						style="color: var(--cs-color)"
+					>
+						C#
+						<span
+							class="underline"
+							style="background-color: var(--cs-color)"
+						></span>
+					</h2>
+				</div>
+			</div>
+
+			<div class="projects-container hidden">
+				<div class="lang-carousel">
+					<div data-lang="html" class="lang-panel right">
+						<div class="lang-text">
+							<p>
+								I started working in
+								<span style="color: var(--html-color)"
+									>HTML/CSS/JS</span
+								>
+								3 years ago making simple static websites. I've
+								come a long way but theres still alot to learn.
+								I have worked the most in this stack and believe
+								that I am proficient.
+							</p>
+						</div>
+						<div class="lang-projects">
+							<div class="project-card movie-night">
+								<div class="card-content">
+									<h2 class="project-title">Movie Night</h2>
+									<p class="project-body">
+										My first bigger web project. A web game
+										where you get a random prompt and have
+										to answer with a movie. Communicates
+										with IMDb's RESTful Web API, along with
+										some others. The game is a bit broken
+										because it is not maintained but it is
+										the first project where I was proud with
+										the results.
+									</p>
+									<div class="project-btn-group">
+										<a
+											href="https://github.com/Abbegubbegum/Movie-night"
+											><img
+												src="img/github.png"
+												alt="Github"
+										/></a>
+										<a
+											href="https://abbegubbegum.github.io/Movie-night/"
+											class="project-btn"
+											>View</a
+										>
+									</div>
+								</div>
+							</div>
+							<div class="project-card portfolio">
+								<div class="card-content">
+									<h2 class="project-title">My Portfolio</h2>
+									<p class="project-body">
+										This website that you're on. It has a
+										heavy focus on visuals and animation and
+										I'm happy with the overall aesthetic of
+										it. I would also like to get some more
+										content on it ;)
+									</p>
+									<div class="project-btn-group">
+										<a
+											href="https://github.com/Abbegubbegum/Movie-night"
+											><img
+												src="img/github.png"
+												alt="Github"
+										/></a>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div data-lang="vue" class="lang-panel right">
+						<div class="lang-text">
+							<p>
+								<span style="color: var(--vue-color)"
+									>Vue.js</span
+								>
+								is my preferred way to make bigger and more
+								interactive websites. I've been using it for 6
+								months and already getting great results. I'm
+								intermediate overall at this Framework.
+							</p>
+						</div>
+						<div class="lang-projects">
+							<div class="project-card gigsearch">
+								<div class="card-content">
+									<h2 class="project-title">Gigsearch</h2>
+									<p class="project-body">
+										A Project where users can search and
+										find gig-musicians to hire. Also allows
+										musicians to create a profile to
+										advertise themselves and a realtime
+										messaging service between users. The
+										project uses Firebase exclusively for
+										both Authentication and as a Database
+										with Cloud Firestore.
+									</p>
+									<div class="project-btn-group">
+										<a
+											href="https://github.com/Abbegubbegum/gigsearch"
+											><img
+												src="img/github.png"
+												alt="Github"
+										/></a>
+										<a
+											href="https://gigsearch-b3ae7.web.app/"
+											class="project-btn"
+											>View</a
+										>
+									</div>
+								</div>
+							</div>
+							<div class="project-card caseopening">
+								<div class="card-content">
+									<h2 class="project-title">
+										Case Opening (Frontend)
+									</h2>
+									<p class="project-body">
+										A Website where users can login and open
+										cases linked to their profile. Also
+										designed for an admin panel where admins
+										can give out cases to users, and edit or
+										add new cases. Uses a Backend Node API
+										for the data handling, and Firebase for
+										Authentication.
+									</p>
+									<div class="project-btn-group">
+										<a
+											href="https://github.com/Abbegubbegum/case-opening"
+											><img
+												src="img/github.png"
+												alt="Github"
+										/></a>
+										<a
+											href="https://caseopening.vercel.app/"
+											class="project-btn"
+											>View</a
+										>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div data-lang="node" class="lang-panel right">
+						<div class="lang-text">
+							I've been using
+							<span style="color: var(--node-color)">NodeJS</span>
+							with Typescript for about 1 year now and it has
+							quickly grown on me, from smaller scripts to hosting
+							a website and API with Express, I'd call myself
+							proficient.
+						</div>
+						<div class="lang-projects">
+							<div class="project-card caseopening">
+								<div class="card-content">
+									<h2 class="project-title">
+										Case Opening (Backend)
+									</h2>
+									<p class="project-body">
+										The backend for Case Opening. It serves
+										as both a web server for the site and as
+										an API using Express. It communicates
+										with Firebase for server-side user
+										authentication. It also uses a Microsoft
+										SQL Server hosted an AWS as a database
+										for all the users and inventories.
+									</p>
+									<div class="project-btn-group">
+										<a
+											href="https://github.com/Abbegubbegum/case-opening"
+											><img
+												src="img/github.png"
+												alt="Github"
+										/></a>
+									</div>
+								</div>
+							</div>
+							<div class="project-card wiki-connections">
+								<div class="card-content">
+									<h2 class="project-title">
+										Wiki Connections
+									</h2>
+									<p class="project-body">
+										A Failed project to calculate the
+										shortest path using Hyperlinks from one
+										wikipedia page to another. The program
+										would scrape the HTML from the Wikipedia
+										pages to get the links and store it
+										internally as a Node Graph. It however
+										quickly became unviable quickly when
+										processing 30000+ requests.
+									</p>
+									<div class="project-btn-group">
+										<a
+											href="https://github.com/Abbegubbegum/wiki-connections"
+											><img
+												src="img/github.png"
+												alt="Github"
+										/></a>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div data-lang="cs" class="lang-panel right">
+						<div class="lang-text">
+							<p>
+								The first programming language that I learned. I
+								have worked a lot in this language mostly making
+								games but never any bigger projects. I have a
+								good understanding of the core language and have
+								been using it for 3 years, and I'd call myself
+								proficient.
+							</p>
+						</div>
+						<div class="lang-projects">
+							<div class="project-card wordle-clone">
+								<div class="card-content">
+									<h2 class="project-title">Wordle Clone</h2>
+									<p class="project-body">
+										The first program I made to serve a
+										function. I made this so me and my
+										friends could play infinite wordle
+										during the day and on desktop. It runs a
+										simple yet effective Graphical Interface
+										and reads of a file of words on the
+										computer.
+									</p>
+									<div class="project-btn-group">
+										<a
+											href="https://github.com/Abbegubbegum/Wordle"
+											><img
+												src="img/github.png"
+												alt="Github"
+										/></a>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>
