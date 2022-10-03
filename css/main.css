@@ -101,7 +101,8 @@ h2 {
 }
 
 .scroll-area {
-	height: 100vh;
+	min-height: 100vh;
+	max-height: 100vh;
 	color: white;
 }
 
@@ -129,12 +130,14 @@ h2 {
 
 #projects {
 	display: grid;
-	grid-template-rows: 20vh 20vh 1fr;
+	grid-template-rows: 15vh 15vh 1fr;
 	place-items: center;
 }
 
 .projects-title {
 	padding: 2rem 0;
+	display: flex;
+	align-items: flex-end;
 }
 
 .langs-container {
@@ -209,6 +212,7 @@ h2 {
 	display: grid;
 	grid-template-rows: auto 1fr;
 	place-items: center;
+	gap: 2rem;
 }
 
 .lang-text {
